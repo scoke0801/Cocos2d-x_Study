@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\cocos2d\external\clipper\clipper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\cocos2d\external\clipper\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AD118A47-97E4-3EA3-B44E-FDEDD29E26CD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

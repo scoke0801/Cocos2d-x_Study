@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\Classes\HelloWorldScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\cocos2d\cocos\precheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\Classes\HelloWorldScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\Resources\fonts\Marker Felt.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\Resources\res\.gitkeep">
+      <Filter>Resources\res</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{C84755FF-A3C1-3AA5-8E73-E0B6756AF912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{91379982-BAC1-3C70-97A0-36CD15A74ECA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{EFD02D6A-250E-32F1-82C7-6750EE667517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AD118A47-97E4-3EA3-B44E-FDEDD29E26CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{DC221078-FF3D-3841-8EF3-1E088516BD2C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{DC53F809-6264-3CD4-8A28-4E8A9FECFA4B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

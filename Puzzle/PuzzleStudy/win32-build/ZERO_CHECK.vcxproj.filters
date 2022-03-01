@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\win32-build\CMakeFiles\ecb497bd03d7383f690f94a6d43ab42b\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0302C721-9FCC-32D0-96A3-602AF41BB947}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
