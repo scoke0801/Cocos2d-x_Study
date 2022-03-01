@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\f0616410d218dedaa6f552a80873568c\SYNC_RESOURCE-PuzzleStudy.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\SYNC_RESOURCE-PuzzleStudy" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{06D0FA42-F455-3F1E-AA9C-F469ABB09538}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

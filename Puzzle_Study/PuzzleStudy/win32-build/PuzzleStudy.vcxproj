@@ -1,0 +1,881 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B017CCDE-1334-3AD7-BA55-8C33F3989BA0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>PuzzleStudy</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\bin\PuzzleStudy\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PuzzleStudy.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PuzzleStudy</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\bin\PuzzleStudy\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PuzzleStudy.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PuzzleStudy</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\bin\PuzzleStudy\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PuzzleStudy.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PuzzleStudy</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\bin\PuzzleStudy\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PuzzleStudy.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PuzzleStudy</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\audio\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\extensions;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\editor-support;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\base;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\recast\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\tinyxml2\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxhash\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxtea\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\clipper\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\edtaa3func\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\ConvertUTF\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\poly2tri\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\md5\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\unzip\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\Box2D\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\chipmunk\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\freetype2\include\win32\freetype2;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include\bullet;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\jpeg\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\openssl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\uv\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\webp\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\websockets\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\curl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\png\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\gles\include\OGLES;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\icon\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\MP3Decoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OggDecoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OpenalSoft\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\glfw3\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\audio\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\extensions;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\editor-support;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\base;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\recast\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\tinyxml2\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxhash\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxtea\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\clipper\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\edtaa3func\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\ConvertUTF\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\poly2tri\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\md5\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\unzip\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\Box2D\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\chipmunk\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\freetype2\include\win32\freetype2;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include\bullet;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\jpeg\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\openssl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\uv\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\webp\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\websockets\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\curl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\png\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\gles\include\OGLES;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\icon\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\MP3Decoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OggDecoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OpenalSoft\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\glfw3\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\audio\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\extensions;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\editor-support;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\base;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\recast\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\tinyxml2\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxhash\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxtea\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\clipper\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\edtaa3func\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\ConvertUTF\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\poly2tri\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\md5\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\unzip\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\Box2D\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\chipmunk\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\freetype2\include\win32\freetype2;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include\bullet;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\jpeg\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\openssl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\uv\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\webp\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\websockets\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\curl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\png\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\gles\include\OGLES;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\icon\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\MP3Decoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OggDecoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OpenalSoft\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\glfw3\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/uv/prebuilt/win32/uv.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/Debug/PuzzleStudy.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Debug/PuzzleStudy.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\audio\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\extensions;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\editor-support;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\base;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\recast\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\tinyxml2\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxhash\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxtea\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\clipper\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\edtaa3func\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\ConvertUTF\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\poly2tri\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\md5\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\unzip\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\Box2D\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\chipmunk\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\freetype2\include\win32\freetype2;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include\bullet;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\jpeg\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\openssl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\uv\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\webp\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\websockets\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\curl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\png\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\gles\include\OGLES;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\icon\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\MP3Decoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OggDecoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OpenalSoft\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\glfw3\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\audio\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\extensions;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\editor-support;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\base;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\recast\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\tinyxml2\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxhash\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxtea\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\clipper\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\edtaa3func\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\ConvertUTF\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\poly2tri\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\md5\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\unzip\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\Box2D\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\chipmunk\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\freetype2\include\win32\freetype2;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include\bullet;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\jpeg\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\openssl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\uv\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\webp\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\websockets\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\curl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\png\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\gles\include\OGLES;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\icon\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\MP3Decoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OggDecoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OpenalSoft\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\glfw3\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\audio\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\extensions;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\editor-support;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\base;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\recast\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\tinyxml2\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxhash\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxtea\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\clipper\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\edtaa3func\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\ConvertUTF\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\poly2tri\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\md5\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\unzip\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\Box2D\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\chipmunk\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\freetype2\include\win32\freetype2;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include\bullet;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\jpeg\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\openssl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\uv\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\webp\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\websockets\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\curl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\png\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\gles\include\OGLES;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\icon\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\MP3Decoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OggDecoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OpenalSoft\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\glfw3\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/uv/prebuilt/win32/uv.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/Release/PuzzleStudy.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/Release/PuzzleStudy.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\audio\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\extensions;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\editor-support;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\base;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\recast\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\tinyxml2\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxhash\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxtea\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\clipper\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\edtaa3func\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\ConvertUTF\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\poly2tri\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\md5\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\unzip\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\Box2D\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\chipmunk\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\freetype2\include\win32\freetype2;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include\bullet;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\jpeg\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\openssl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\uv\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\webp\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\websockets\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\curl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\png\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\gles\include\OGLES;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\icon\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\MP3Decoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OggDecoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OpenalSoft\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\glfw3\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\audio\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\extensions;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\editor-support;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\base;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\recast\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\tinyxml2\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxhash\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxtea\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\clipper\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\edtaa3func\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\ConvertUTF\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\poly2tri\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\md5\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\unzip\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\Box2D\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\chipmunk\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\freetype2\include\win32\freetype2;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include\bullet;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\jpeg\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\openssl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\uv\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\webp\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\websockets\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\curl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\png\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\gles\include\OGLES;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\icon\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\MP3Decoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OggDecoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OpenalSoft\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\glfw3\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\audio\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\extensions;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\editor-support;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\base;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\recast\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\tinyxml2\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxhash\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxtea\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\clipper\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\edtaa3func\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\ConvertUTF\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\poly2tri\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\md5\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\unzip\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\Box2D\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\chipmunk\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\freetype2\include\win32\freetype2;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include\bullet;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\jpeg\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\openssl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\uv\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\webp\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\websockets\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\curl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\png\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\gles\include\OGLES;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\icon\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\MP3Decoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OggDecoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OpenalSoft\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\glfw3\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/uv/prebuilt/win32/uv.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/MinSizeRel/PuzzleStudy.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/MinSizeRel/PuzzleStudy.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\audio\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\extensions;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\editor-support;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\base;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\recast\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\tinyxml2\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxhash\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxtea\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\clipper\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\edtaa3func\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\ConvertUTF\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\poly2tri\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\md5\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\unzip\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\Box2D\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\chipmunk\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\freetype2\include\win32\freetype2;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include\bullet;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\jpeg\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\openssl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\uv\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\webp\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\websockets\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\curl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\png\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\gles\include\OGLES;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\icon\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\MP3Decoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OggDecoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OpenalSoft\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\glfw3\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\audio\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\extensions;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\editor-support;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\base;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\recast\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\tinyxml2\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxhash\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxtea\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\clipper\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\edtaa3func\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\ConvertUTF\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\poly2tri\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\md5\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\unzip\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\Box2D\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\chipmunk\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\freetype2\include\win32\freetype2;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include\bullet;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\jpeg\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\openssl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\uv\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\webp\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\websockets\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\curl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\png\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\gles\include\OGLES;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\icon\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\MP3Decoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OggDecoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OpenalSoft\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\glfw3\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\audio\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\extensions;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\editor-support;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\base;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\platform\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\recast\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\tinyxml2\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxhash\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\xxtea\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\clipper\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\edtaa3func\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\ConvertUTF\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\poly2tri\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\md5\..;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\unzip\.;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\Box2D\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\chipmunk\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\freetype2\include\win32\freetype2;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\bullet\include\bullet;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\jpeg\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\openssl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\uv\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\webp\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\websockets\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\curl\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\png\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\gles\include\OGLES;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\icon\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\MP3Decoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OggDecoder\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\win32-specific\OpenalSoft\include;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\glfw3\include\win32;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/uv/prebuilt/win32/uv.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/RelWithDebInfo/PuzzleStudy.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/bin/PuzzleStudy/RelWithDebInfo/PuzzleStudy.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy -BC:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build --check-stamp-file C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy -BC:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build --check-stamp-file C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy -BC:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build --check-stamp-file C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy -BC:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build --check-stamp-file C:/UsingProjects/Cocos_Study/Puzzle_Study/PuzzleStudy/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes\AppDelegate.h" />
+    <ClInclude Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes\HelloWorldScene.h" />
+    <ClInclude Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\proj.win32\main.h" />
+    <ClInclude Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\proj.win32\resource.h" />
+    <ClCompile Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes\AppDelegate.cpp" />
+    <ClCompile Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\proj.win32\main.cpp" />
+    <ResourceCompile Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\proj.win32\game.rc" />
+    <ClInclude Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Resources\CloseNormal.png" />
+    <ClInclude Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Resources\CloseSelected.png" />
+    <ClInclude Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Resources\HelloWorld.png" />
+    <ClInclude Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Resources\fonts\arial.ttf" />
+    <ClInclude Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\Resources\res\.gitkeep" />
+    <ClCompile Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\cocos2d\cocos\precheader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\ZERO_CHECK.vcxproj">
+      <Project>{C6AFCBC8-A1F1-34ED-9E60-0C192DBD2D17}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\SYNC_RESOURCE-PuzzleStudy.vcxproj">
+      <Project>{1947F7E1-9718-3B11-AB3A-91AC41789897}</Project>
+      <Name>SYNC_RESOURCE-PuzzleStudy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{0B6D2B6A-E15C-31B6-B99C-B99BB9A7D560}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{F382E175-EF5C-3FA9-B378-7656D8A47614}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{17F248E1-30B3-3545-9C93-37A330D6E1CD}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{EB6261A1-4D96-377E-8068-3A1F3FAEFE1F}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\engine\external\md5\ext_md5.vcxproj">
+      <Project>{757D373A-F6D7-3B85-97F9-9BFA91235015}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{68391F66-E027-3E68-86EA-4A05928FC45D}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\engine\external\recast\ext_recast.vcxproj">
+      <Project>{EC5F4E40-A086-39E9-B0C8-FFB0F20B8B8C}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{E7AD0EAD-4D08-3B69-86CD-D93399C39C91}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{F40BED5E-1BA4-3697-A781-DD33DE134238}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{CA29BEFB-3575-346C-8B53-BD4562E4EF19}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{D0A3E2A7-2E27-341D-AE3A-CEED19957679}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\UsingProjects\Cocos_Study\Puzzle_Study\PuzzleStudy\win32-build\engine\external\external.vcxproj">
+      <Project>{D2885F21-F8F2-318A-93B1-F77DF57504D5}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
