@@ -35,10 +35,10 @@ using namespace cocos2d::experimental;
 
 USING_NS_CC;
 
-static cocos2d::Size designResolutionSize = cocos2d::Size(768, 1024);
-static cocos2d::Size smallResolutionSize  = cocos2d::Size(768 * 0.5, 1024 * 0.5);
-static cocos2d::Size mediumResolutionSize = cocos2d::Size(768 * 1.5, 1024 * 1.5);
-static cocos2d::Size largeResolutionSize  = cocos2d::Size(768 * 2.0, 1024 * 2.0);
+static cocos2d::Size designResolutionSize = cocos2d::Size(APP_WIDTH, APP_HEIGHT);
+static cocos2d::Size smallResolutionSize  = cocos2d::Size(APP_WIDTH * 0.5, APP_HEIGHT * 0.5);
+static cocos2d::Size mediumResolutionSize = cocos2d::Size(APP_WIDTH * 1.5, APP_HEIGHT * 1.5);
+static cocos2d::Size largeResolutionSize  = cocos2d::Size(APP_WIDTH * 2.0, APP_HEIGHT * 2.0);
 
 AppDelegate::AppDelegate()
 {
@@ -71,6 +71,7 @@ static int register_all_packages()
 bool AppDelegate::applicationDidFinishLaunching() {
     // initialize director
     auto director = Director::getInstance();
+    
     auto glview = director->getOpenGLView();
     if(!glview) {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
@@ -89,7 +90,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // Set the design resolution
     
-    glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::NO_BORDER);
+    glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::NO_BORDER); 
+
     auto frameSize = glview->getFrameSize();
     // if the frame's height is larger than the height of medium size.
     if (frameSize.height > mediumResolutionSize.height)
