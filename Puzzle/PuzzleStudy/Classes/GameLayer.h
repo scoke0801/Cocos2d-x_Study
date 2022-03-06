@@ -5,8 +5,13 @@
 
 //USING_NS_CC;
 
+
 class GameLayer : public cocos2d::Layer
 {
+	enum class zOrder {
+		zBackground = 0,
+		zGameObject = 1,
+	};
 public:
 	bool init();
 

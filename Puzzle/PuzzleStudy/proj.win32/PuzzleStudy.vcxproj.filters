@@ -16,6 +16,13 @@
     <ClCompile Include="..\Classes\GameLayer.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Defines.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObject.cpp" />
+    <ClCompile Include="MyLogger.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\Classes\AppDelegate.h">
@@ -52,6 +59,10 @@
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Defines.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObject.h" />
+    <ClInclude Include="..\Classes\MyLogger.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>

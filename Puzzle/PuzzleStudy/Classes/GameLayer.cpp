@@ -1,6 +1,5 @@
 #include "GameLayer.h"
-#include <string>
- 
+#include "MyLogger.h"
 bool GameLayer::init()
 {
 	if (Layer::init() == false) {
@@ -28,7 +27,7 @@ void GameLayer::InitObjects()
 	cocos2d::Sprite* pBackGroundSprite = cocos2d::Sprite::create("Background.png");
 	pBackGroundSprite->setPosition(cocos2d::Vec2{ 0,0 });
 	pBackGroundSprite->setAnchorPoint(cocos2d::Vec2{ 0.0f,0.0f });
-	addChild(pBackGroundSprite);
+	addChild(pBackGroundSprite, ICAST(zOrder::zBackground));
 
 	std::string objectsNames[OBJECT_TYPE_COUNT] = {
 		"Blue.png",
@@ -40,21 +39,21 @@ void GameLayer::InitObjects()
 		"Yellow.png"
 	};
 
-	for (UINT y = 0; y < ROW_COUNT; ++y) {
-		float yPos = m_winSize.height -  floorf(y * (APP_HEIGHT / 12)) - OBJECT_HEIGHT;
+	for (UINT y = 0; y < ROW_COUNT; ++y) { 
 
 		for (UINT x = 0; x < COL_COUNT; ++x) {
 			int nType = rand() % OBJECT_TYPE_COUNT;
 			cocos2d::Sprite* pGameObject = cocos2d::Sprite::create(objectsNames[nType]);
 
-			// 내림
-			float xPos = floorf(x * (APP_WIDTH / 8));
-			pGameObject->setPosition({ xPos, yPos });
+			// 내림 
+			pGameObject->setPosition( Common::ComputeXY(x,y) );
 			pGameObject->setAnchorPoint({ 0.0f, 1.0f });
 
 			m_pBoard[y][x] = pGameObject;
 
-			addChild(pGameObject, 1);
+			addChild(pGameObject, ICAST(zOrder::zGameObject));
 		}
 	}
+
+	DebugLog(SetLogMsg("TEST"));
 }
