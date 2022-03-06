@@ -17,10 +17,10 @@ cocos2d::Point Common::ComputeXY(float x, float y)
 
 int Common::ComputeBoardX(float x)
 {
-    return static_cast<int>(x / floorf((APP_WIDTH / COL_COUNT)));
+    return static_cast<int>(x / floorf(APP_WIDTH / COL_COUNT));
 }
 
 int Common::ComputeBoardY(float y)
 {
-    return static_cast<int>(y / floorf((APP_HEIGHT / (ROW_COUNT + 4))));
+    return static_cast<int>((y - OBJECT_HEIGHT) / floorf(APP_HEIGHT/ (ROW_COUNT + 4)));
 }
