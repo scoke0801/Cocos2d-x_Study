@@ -20,7 +20,7 @@
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\GameObject.cpp" />
-    <ClCompile Include="MyLogger.cpp">
+    <ClCompile Include="Logger.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,7 +62,7 @@
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\GameObject.h" />
-    <ClInclude Include="..\Classes\MyLogger.h">
+    <ClInclude Include="..\Classes\Logger.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>

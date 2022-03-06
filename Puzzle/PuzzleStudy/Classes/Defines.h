@@ -1,6 +1,7 @@
 #pragma once
 
 #include "cocos2d.h" 
+#include "Logger.h"
 
 constexpr int APP_WIDTH = 480;
 constexpr int APP_HEIGHT = 800;

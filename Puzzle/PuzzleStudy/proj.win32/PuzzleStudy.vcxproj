@@ -805,11 +805,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MyLogger.cpp" />
+    <ClCompile Include="Logger.cpp" />
     <ClInclude Include="..\Classes\Defines.h" />
     <ClInclude Include="..\Classes\GameLayer.h" />
     <ClInclude Include="..\Classes\GameObject.h" />
-    <ClInclude Include="..\Classes\MyLogger.h" />
+    <ClInclude Include="..\Classes\Logger.h" />
     <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\Classes\AppDelegate.h" />
     <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\Classes\HelloWorldScene.h" />
     <ClInclude Include="C:\UsingProjects\Cocos2d-x_Study\Puzzle\PuzzleStudy\proj.win32\main.h" />
