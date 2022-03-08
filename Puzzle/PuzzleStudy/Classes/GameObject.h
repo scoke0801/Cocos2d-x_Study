@@ -20,5 +20,16 @@ protected:
 public:
 	static CGameObject* Create(int type);
 
+	void ProcessSliding();
+	void SlidingCompleteHandler();
+
+public:
 	GET_SET_DEFINE(int, Type, m_nType); 
+	GET_SET_DEFINE(int, TargetBoardX, m_nTargetBoardX); // 움직일 때 향해야 할 좌표
+	GET_SET_DEFINE(int, TargetBoardY, m_nTargetBoardY); // 움직일 때 향해야 할 좌표
+
+private:
+	// 움직이기 전의 좌표
+	int m_nPrevBoardX; 
+	int m_nPrevBoardY;
 };

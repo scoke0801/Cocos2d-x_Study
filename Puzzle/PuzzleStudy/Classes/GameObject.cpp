@@ -44,3 +44,27 @@ CGameObject* CGameObject::Create(int type)
 
     return pGameObject;
 }
+
+void CGameObject::ProcessSliding()
+{
+    Point position = getPosition();
+
+    m_nPrevBoardX = Common::ComputeBoardX(position.x);
+    m_nPrevBoardY = MAX_ROW_COUNT - Common::ComputeBoardY(position.y);
+
+    Point targetPosition = Common::ComputeXY(m_nTargetBoardX, m_nTargetBoardY);
+
+   // RotateBy* pRotateBy = RotateBy::create(1.0f, 360.0f);
+    MoveBy* pMoveBy = MoveBy::create(0.1f, { targetPosition.x - position.x, targetPosition.y - position.y });
+     
+    FiniteTimeAction* pAction = Sequence::create(pMoveBy,
+        CallFunc::create(CC_CALLBACK_0(CGameObject::SlidingCompleteHandler, this))
+        , NULL);
+
+    runAction(pAction);
+}
+
+void CGameObject::SlidingCompleteHandler()
+{
+    Utils::DebugLog("SlidingCompleteHandler");
+}

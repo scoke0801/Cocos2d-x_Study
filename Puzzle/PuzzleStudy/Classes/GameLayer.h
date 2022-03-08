@@ -4,6 +4,7 @@
 #include "Defines.h"
 
 //USING_NS_CC;
+class CGameObject;
 
 class GameLayer : public cocos2d::Layer
 {
@@ -23,15 +24,22 @@ public:
     void onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* unused_event) override; 
     void onTouchCancelled(cocos2d::Touch* touch, cocos2d::Event* unused_event) override;
 
+	bool IsAdjacent(int x1, int y1, int x2, int y2);
+	void SwapObjects(int x1, int y1, int x2, int y2);
+
 public:
 	CREATE_FUNC(GameLayer);
 
 
 public:
-	void InitObjects();
+	void StartGame();
 
 private:
 	cocos2d::Size m_winSize;
-	cocos2d::Sprite* m_pBoard[ROW_COUNT][COL_COUNT];
+	CGameObject* m_pBoard[ROW_COUNT][COL_COUNT];
+
+	bool m_bTouchStarted; 
+	int m_nStartX;
+	int m_nStartY;
 };
 

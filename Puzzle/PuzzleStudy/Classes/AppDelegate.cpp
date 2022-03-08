@@ -33,7 +33,6 @@
 using namespace cocos2d::experimental;
 #endif
 
-USING_NS_CC;
 
 static cocos2d::Size designResolutionSize = cocos2d::Size(APP_WIDTH, APP_HEIGHT);
 static cocos2d::Size smallResolutionSize  = cocos2d::Size(APP_WIDTH * 0.5, APP_HEIGHT * 0.5);

@@ -16,11 +16,11 @@
     <ClCompile Include="..\Classes\GameLayer.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Defines.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\GameObject.cpp" />
     <ClCompile Include="Logger.cpp">
+      <Filter>Source Files\Classes\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Defines.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -58,11 +58,11 @@
     <ClInclude Include="..\Classes\GameLayer.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Defines.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\GameObject.h" />
     <ClInclude Include="..\Classes\Logger.h">
+      <Filter>Source Files\Classes\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Defines.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
@@ -92,6 +92,9 @@
     </Filter>
     <Filter Include="Source Files\proj.win32">
       <UniqueIdentifier>{81B37C51-1FB1-35FC-96BE-3490CB5E5C99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Utils">
+      <UniqueIdentifier>{271062b9-dc17-49c8-b399-e965bed75139}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

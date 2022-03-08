@@ -1,6 +1,6 @@
 #include "GameLayer.h" 
 #include "GameObject.h"
- 
+
 bool GameLayer::init()
 {
 	if (Layer::init() == false) {
@@ -9,7 +9,7 @@ bool GameLayer::init()
 	m_winSize = cocos2d::Director::getInstance()->getWinSize();
 
 	//cocos2d::Director::getInstance()->getEventDispatcher()->setEnabled(true);
-	InitObjects();  
+	StartGame();  
 
 	auto listener = cocos2d::EventListenerTouchOneByOne::create(); 
 	listener->setSwallowTouches(true); 
@@ -35,48 +35,118 @@ cocos2d::Scene* GameLayer::scene()
 
 bool GameLayer::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* unused_event)
 {
+	if ( true == m_bTouchStarted) {
+		return false;
+	}
+	  
 	if (!touch) {
 		return false;
 	}
 
 	cocos2d::Point pt= touch->getLocationInView();
 
-	int boardX = Common::ComputeBoardX(pt.x);
-	int boardY = Common::ComputeBoardY(pt.y);
-	if (boardX < 0 || boardX >= COL_COUNT) {
+	m_nStartX = Common::ComputeBoardX(pt.x);
+	m_nStartY = Common::ComputeBoardY(pt.y);
+	if (m_nStartX < 0 || m_nStartX >= COL_COUNT) {
 		return false;
 	}
-	if (boardY < 0 || boardY >= ROW_COUNT) {
+	if (m_nStartY < 0 || m_nStartY >= ROW_COUNT) {
 		return false;
 	}
-	m_pBoard[boardY][boardX]->setVisible(!m_pBoard[boardY][boardX]->isVisible());
-	DebugLog(string_format("x : %f, y : %f, BX : %d, BY : %d\n", pt.x, pt.y, boardX, boardY));
-	return true;
+
+	//m_pBoard[m_nStartY][m_nStartX]->setVisible(!m_pBoard[m_nStartY][m_nStartX]->isVisible());
+	Utils::DebugLog(Utils::string_format("x : %f, y : %f, BX : %d, BY : %d\n", pt.x, pt.y, m_nStartX, m_nStartY));
+	return m_bTouchStarted = true;
 }
 
 void GameLayer::onTouchMoved(cocos2d::Touch* touch, cocos2d::Event* unused_event)
 {
+	if (false == m_bTouchStarted) {
+		return;
+	}
+	cocos2d::Point pt = touch->getLocationInView();
+
+	int nBoardX = Common::ComputeBoardX(pt.x);
+	int nBoardY = Common::ComputeBoardY(pt.y);
+
+	if (m_nStartX != nBoardX || m_nStartY != nBoardY) {
+		if (IsAdjacent(m_nStartX, m_nStartY, nBoardX, nBoardY)) {
+			SwapObjects(m_nStartX, m_nStartY, nBoardX, nBoardY);
+		}
+	}
 	//DebugLog("Touch-Moved");
 }
 
 void GameLayer::onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* unused_event)
 {
+	if (false == m_bTouchStarted) {
+		return;
+	}
+
+	
+	m_bTouchStarted = false;
 	//DebugLog("Touch-Ended");
 }
 
 void GameLayer::onTouchCancelled(cocos2d::Touch* touch, cocos2d::Event* unused_event)
-{
-	DebugLog("Touch-Cancelled");
+{ 
 }
 
-void GameLayer::InitObjects()
+bool GameLayer::IsAdjacent(int x1, int y1, int x2, int y2)
 {
+	return (abs(x1 - x2) + abs(y1 - y2)) == 1;
+}
+
+void GameLayer::SwapObjects(int x1, int y1, int x2, int y2)
+{
+	CGameObject* pTemp = m_pBoard[y1][x1];
+
+	m_pBoard[y1][x1] = m_pBoard[y2][x2];
+	m_pBoard[y2][x2] = pTemp;
+
+	//m_pBoard[y1][x1]->setPosition(Common::ComputeXY(x1, y1));
+	//m_pBoard[y2][x2]->setPosition(Common::ComputeXY(x2, y2));
+
+	m_pBoard[y1][x1]->SetTargetBoardX(x1);
+	m_pBoard[y1][x1]->SetTargetBoardY(y1);
+	m_pBoard[y2][x2]->SetTargetBoardX(x2);
+	m_pBoard[y2][x2]->SetTargetBoardY(y2);
+
+	m_pBoard[y1][x1]->ProcessSliding();
+	m_pBoard[y2][x2]->ProcessSliding();
+}
+
+void GameLayer::StartGame()
+{
+	srand((unsigned int)time(NULL));
+
+	m_bTouchStarted = false;
+
 	cocos2d::Sprite* pBackGroundSprite = cocos2d::Sprite::create("Background.png");
 	pBackGroundSprite->setPosition(cocos2d::Vec2{ 0,0 });
 	pBackGroundSprite->setAnchorPoint(cocos2d::Vec2{ 0.0f,0.0f });
 	addChild(pBackGroundSprite, ICAST(zOrder::zBackground));
 
-	 
+	bool bDebugDraw = true; 
+	//bDebugDraw = false;
+	if(bDebugDraw)
+	{
+		for (size_t y = 0; y < ROW_COUNT; ++y) {
+			int ySize = m_winSize.height / ROW_COUNT;
+			int xSize = m_winSize.width / COL_COUNT;
+			for (size_t x = 0; x < COL_COUNT; ++x) {
+
+				auto draw = DrawNode::create();
+				draw->drawLine(Point(x * xSize, 0), Point(x * xSize, m_winSize.height), Color4F::RED);
+				addChild(draw, ICAST(zOrder::zGameObject) + 1);
+
+				draw = DrawNode::create();
+				draw->drawLine(Point(0, y * ySize), Point(m_winSize.width, y * ySize), Color4F::RED);
+				addChild(draw, ICAST(zOrder::zGameObject) + 1);
+			}
+		}
+	}
+
 	for (UINT y = 0; y < ROW_COUNT; ++y) { 
 
 		for (UINT x = 0; x < COL_COUNT; ++x) {
@@ -91,6 +161,5 @@ void GameLayer::InitObjects()
 			addChild(pGameObject, ICAST(zOrder::zGameObject));
 		}
 	}
-
-	DebugLog(SetLogMsg("TEST"));
+	 
 }

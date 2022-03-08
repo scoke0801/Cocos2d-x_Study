@@ -3,6 +3,8 @@
 #include "cocos2d.h" 
 #include "Logger.h"
 
+USING_NS_CC;
+
 constexpr int APP_WIDTH = 480;
 constexpr int APP_HEIGHT = 800;
 
